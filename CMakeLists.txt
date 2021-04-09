@@ -5,6 +5,8 @@ project(ledmusic
 
 set(CMAKE_CXX_STANDARD 17)
 
+add_subdirectory(thirdparty)
+
 add_compile_options(
         -Wall
         -Wextra
@@ -18,7 +20,6 @@ add_compile_options(
         -Wcast-align
 )
 
-add_subdirectory(thirdparty)
 add_subdirectory(modules)
 add_subdirectory(example)
 
